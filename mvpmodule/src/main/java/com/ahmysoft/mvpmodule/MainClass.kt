@@ -7,7 +7,7 @@ import com.vansh.mvpkotlin.MainActivityView
 class MainClass: MainActivityView {
     var presenter : MainActivityPresenter? = MainActivityPresentImpl(this)
 
-    private fun callApi(userName : String){
+    fun callApi(userName : String){
         presenter?.submitUserInfo(userName)
     }
 

@@ -2,6 +2,7 @@ package com.vansh.mvpkotlin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ahmysoft.mvpmodule.MainClass
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -9,13 +10,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        /*idBtnSubmit.setOnClickListener {
+        idBtnSubmit.setOnClickListener {
 
             if(idEtUserName.text.toString().isEmpty()){
                 return@setOnClickListener
             }
             MainClass().callApi(idEtUserName.text.toString())
-        }*/
+        }
 
     }
 }
