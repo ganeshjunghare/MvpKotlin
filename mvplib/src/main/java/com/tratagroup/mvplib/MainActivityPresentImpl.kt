@@ -1,6 +1,5 @@
-package com.vansh.mvpkotlin
+package com.tratagroup.mvplib
 
-import android.content.Context
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter
 
 /**
@@ -11,7 +10,8 @@ class MainActivityPresentImpl(var view: MainActivityView?):
     MainActivityPresenter,
     MainActivityInteractor.OnQueryFetchUserIntoListner{
 
-    var interactor : MainActivityInteractor = MainActivityInteractorImpl()
+    var interactor : com.tratagroup.mvplib.MainActivityInteractor =
+        com.tratagroup.mvplib.MainActivityInteractorImpl()
 
     override fun submitUserInfo(userName: String) {
         if(view != null){
