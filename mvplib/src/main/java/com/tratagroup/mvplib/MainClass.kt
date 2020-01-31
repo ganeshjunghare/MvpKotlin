@@ -4,7 +4,7 @@ class MainClass: MainActivityView {
 
     val presenter: MainActivityPresenter = MainActivityPresentImpl(this)
 
-    fun callApi(userName : String){
+    fun callApi(userName : String) {
         presenter.submitUserInfo(userName)
     }
 
