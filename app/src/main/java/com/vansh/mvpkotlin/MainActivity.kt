@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
                getString(R.string.enter_userName).toast(this)
                 return@setOnClickListener
             }
-
         }
 
     }
