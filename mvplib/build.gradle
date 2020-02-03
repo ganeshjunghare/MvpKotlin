@@ -5,30 +5,6 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.ganeshjunghare'
 
-/*apply plugin: 'maven-publish'
-
-task sourceJar(type: Jar) {
-    from android.sourceSets.main.java.srcDirs
-    classifier "sources"
-}
-
-publishing {
-    publications {
-        bar(MavenPublication) {
-            groupId 'com.foo'
-            artifactId 'bar'
-            version '0.1'
-            artifact(sourceJar)
-            artifact("$buildDir/outputs/aar/mvplib-debug.aar")
-        }
-    }
-    repositories {
-        maven {
-            url "$buildDir/repo"
-        }
-    }
-}*/
-
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"

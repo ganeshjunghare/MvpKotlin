@@ -2,7 +2,7 @@ package com.vansh.mvpkotlin
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-//import com.tratagroup.mvplib.MainClass
+import com.tratagroup.mvplib.MainClass
 import com.vansh.mvpkotlin.util.toast
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-//            MainClass(this@MainActivity).callApi(idEtUserName.text.toString())
+            MainClass(this@MainActivity).callApi(idEtUserName.text.toString())
         }
 
     }
