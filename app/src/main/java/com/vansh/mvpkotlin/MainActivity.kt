@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             if(idEtUserName.text.toString().isEmpty()){
                 return@setOnClickListener
             }
-            MainClass().callApi(idEtUserName.text.toString())
+            MainClass(this).callApi(idEtUserName.text.toString())
         }
 
     }
